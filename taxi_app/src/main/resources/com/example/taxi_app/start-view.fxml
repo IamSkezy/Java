@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #FFFF73;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taxi_app.Controller">
+   <children>
+      <Label layoutX="84.0" layoutY="36.0" text="Авторизация" textFill="#202020">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginField" layoutX="76.0" layoutY="93.0" promptText="Login" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-border-radius: 10px;" />
+      <TextField fx:id="passwordFieldNotHidden" layoutX="76.0" layoutY="145.0" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-border-radius: 10px;" />
+      <Label fx:id="label" layoutX="80.0" layoutY="183.0" textFill="#ae4242">
+         <font>
+            <Font name="Candara Light" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="passwordCheckBox" layoutX="80.0" layoutY="210.0" mnemonicParsing="false" onAction="#visiblePass" text="Посмотреть пароль">
+         <font>
+            <Font name="Candara Light" size="14.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="submitButton" layoutX="102.0" layoutY="255.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #202020; -fx-border-color: #000; -fx-border-radius: 10px; -fx-min-width: 100px;" text="Войти" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" layoutY="250.0" prefHeight="47.0" prefWidth="300.0" text="Много неудачных попыток, подождите 5 секунд" textFill="#a81b1b" visible="false">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="341.0" text="Powered by Dmitry Anufriev" textFill="#202020">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="76.0" layoutY="145.0" promptText="Password" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-border-radius: 10px;" />
+   </children>
+</AnchorPane>
