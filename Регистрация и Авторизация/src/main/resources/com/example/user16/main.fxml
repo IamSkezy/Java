@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #1d1d1d;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.user16.Controller">
+   <children>
+      <Label layoutX="83.0" layoutY="21.0" text="Авторизация" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginField" layoutX="64.0" layoutY="78.0" promptText="Введите логин:" style="-fx-background-color: #fff;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passwordFieldHidden" layoutX="64.0" layoutY="134.0" promptText="Введите пароль:" style="-fx-background-color: #fff;" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="64.0" layoutY="134.0" promptText="Введите пароль:" style="-fx-background-color: #fff;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <CheckBox fx:id="checkbox" layoutX="75.0" layoutY="180.0" mnemonicParsing="false" text="Посмотреть пароль" textFill="WHITE" onAction="#visiblePass">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="error_wrongData" layoutX="42.0" layoutY="216.0" text="Неправильный логин или пароль" textFill="#d03737" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="error_emptyData" layoutX="75.0" layoutY="216.0" text="Не все поля заполнены" textFill="#d03737" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="authButton" layoutX="104.0" layoutY="291.0" mnemonicParsing="false" style="-fx-background-color: #fff;" text="Войти" textFill="#1d1d1d" onAction="#login">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
